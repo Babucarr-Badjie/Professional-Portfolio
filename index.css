@@ -32,6 +32,7 @@
 
 body {
   line-height: 1.7;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -59,4 +60,26 @@ nav {
 .nav-menu a:hover {
   color: #2e3267;
   text-decoration: underline;
+}
+.header-left {
+  margin-top: 20%;
+  font-size: 0.9rem;
+  width: 50%;
+}
+.header-right-image img {
+  width: 20rem;
+  margin-top: 3rem;
+  border-radius: 3rem;
+}
+.header-container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  gap: 4rem;
+}
+.header-container h1 {
+  font-size: 2rem;
+}
+.header-container h1 span {
+  color: red;
+  text-transform: uppercase;
 }
