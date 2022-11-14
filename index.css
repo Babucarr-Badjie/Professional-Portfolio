@@ -165,10 +165,19 @@ nav button {
   display: flex;
   margin: 1.25rem 0 2.5rem;
 }
+.experience-titles p:hover {
+  color: var(--color-danger);
+}
 .title-link {
   margin-right: 3.2rem;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 800;
   cursor: pointer;
   position: relative;
+}
+.experience-content {
+  line-height: 2.5rem;
+}
+.experience-content h4 {
+  margin-top: 2rem;
 }
