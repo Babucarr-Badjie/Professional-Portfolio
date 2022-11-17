@@ -70,7 +70,8 @@ nav button {
   gap: 3rem;
 }
 
-.nav-menu a:hover {
+.nav-menu li a:hover {
+  background-color: rgb(21, 70, 161);
   color: #2e3267;
   text-decoration: underline;
 }
@@ -83,9 +84,8 @@ nav button {
   width: 20rem;
   margin-top: 3rem;
   border-radius: 3rem;
-  
 }
-.header-right-image img:hover{
+.header-right-image img:hover {
   opacity: 0.5;
   transition: 0.5s;
 }
@@ -147,10 +147,15 @@ nav button {
   transition: 0.3s;
   border: 2px solid #000;
   font-size: 0.9rem;
-  background-color: #c4c4a1;
+  background-color: var(--color-bg1);
+}
+
+span a button {
+  color: var(--color-white);
 }
 .btn:hover {
   background: #fff;
+  color: var(--color-black);
 }
 .my-cv .contact {
   color: #fff;
@@ -186,4 +191,53 @@ nav button {
 }
 .experience-content h4 {
   margin-top: 2rem;
+}
+
+/* ================== My skills content =============== */
+.my-skills {
+  width: 100%;
+  background-color: #dddddd;
+}
+.skills {
+  text-align: right;
+  padding: 0.2rem 0rem 0.2rem 0rem;
+}
+.html-skills {
+  width: 85%;
+  background-color: #00bf8e;
+}
+.css-skills {
+  width: 78%;
+  background-color: #6c63ff;
+}
+.javascript-skills {
+  width: 80%;
+  background-color: #f7c94b;
+}
+.python-skills {
+  width: 40%;
+  background-color: #8b3a3a;
+}
+.react-skills {
+  width: 75%;
+  background-color: #cabe98;
+}
+.github-skills {
+  width: 65%;
+  background-color: #9390c4;
+}
+.git-skills {
+  width: 60%;
+  background-color: #ff63be;
+}
+
+/* =============== display clicked content =============== */
+.experience-content{
+  display: none;
+
+} 
+
+
+.experience-content.active-content{
+display: block;
 }

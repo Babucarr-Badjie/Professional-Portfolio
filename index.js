@@ -21,3 +21,15 @@ const closeNavBar = () => {
   menuBotton.style.display = "inline-block";
 };
 closeBotton.addEventListener("click", closeNavBar);
+
+
+// ============Open clicked content in the experience ===================
+
+const tabs = document.getElementsByClassName("title-link")
+const tabContents = document.getElementsByClassName("experience-content");
+function opentab(contentName) {
+  for (tabContents of tabContent) {
+    tabContent.classList.remove("title-link")
+  }
+
+}
