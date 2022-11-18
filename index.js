@@ -22,14 +22,17 @@ const closeNavBar = () => {
 };
 closeBotton.addEventListener("click", closeNavBar);
 
-
 // ============Open clicked content in the experience ===================
 
-const tabs = document.getElementsByClassName("title-link")
+const tabLinks = document.getElementsByClassName("title-link");
 const tabContents = document.getElementsByClassName("experience-content");
 function opentab(contentName) {
-  for (tabContents of tabContent) {
-    tabContent.classList.remove("title-link")
+  for (tabLink of tabLinks) {
+    tabLink.classList.remove("active-link");
   }
-
+  for (tabContent of tabContents) {
+    tabContent.classList.remove("active-content");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(contentName).classList.add("active-content");
 }

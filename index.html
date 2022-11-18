@@ -118,15 +118,17 @@
         <div class="experience">
           <h1>Experience</h1>
           <div class="experience-titles">
-            <p class="title-link " onclick="opentab('work-history')">Work History</p>
-            <p class="title-link" onclick="opentab('Skills')">Skills</p>
+            <p class="title-link active-link" onclick="opentab('work')">
+              Work History
+            </p>
+            <p class="title-link" onclick="opentab('skills')">Skills</p>
           </div>
         </div>
-        <div class="experience-content active-content" id="work-history">
+        <div class="experience-content active-content" id="work">
           <!-- =================== Job description content ==================== -->
           <h3>Job Description</h3>
           <p>
-            Currently working as a product techical engineer in a Semiconduct
+            Currently working as a product techical engineer in a Semiconductor
             mechinery manufacturing company, Taiwan.
           </p>
           <p>
@@ -160,8 +162,8 @@
         </div>
         <!-- ========================Skills description content ================== -->
         <div class="experience-content" id="skills">
-          <h3>My Skills</h3>
-          <p><b>Languages</b></p>
+          <h3 class="skills-title">My Skills</h3>
+          <p class="title"><b>Languages</b></p>
           <p>HTML</p>
           <div class="my-skills">
             <div class="skills html-skills">85%</div>
@@ -178,12 +180,12 @@
           <div class="my-skills">
             <div class="skills python-skills">40%</div>
           </div>
-          <p><b>Labries</b></p>
+          <p class="title"><b>Labries</b></p>
           <p>React.js</p>
           <div class="my-skills">
             <div class="skills react-skills">75%</div>
           </div>
-          <p><b>Version Control</b></p>
+          <p class="title"><b>Version Control</b></p>
           <p>Github</p>
           <div class="my-skills">
             <div class="skills github-skills">65%</div>

@@ -71,8 +71,6 @@ nav button {
 }
 
 .nav-menu li a:hover {
-  background-color: rgb(21, 70, 161);
-  color: #2e3267;
   text-decoration: underline;
 }
 .header-left {
@@ -163,6 +161,7 @@ span a button {
   font-size: 15px;
   background-color: rgb(0, 0, 0);
 }
+
 /* ===============Experience section ================ */
 .experience {
   display: flex;
@@ -174,7 +173,10 @@ span a button {
 
 .experience-titles {
   display: flex;
+  gap: 10rem;
   margin: 1.25rem 0 2.5rem;
+  
+
 }
 .experience-titles p:hover {
   color: var(--color-primary);
@@ -186,17 +188,42 @@ span a button {
   cursor: pointer;
   position: relative;
 }
+.title-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.title-link.active-link::after {
+  width: 100%;
+}
 .experience-content {
   line-height: 2.5rem;
+  display: none;
+}
+.experience-content ul li {
+  list-style: none;
+  margin: 10px 0;
 }
 .experience-content h4 {
   margin-top: 2rem;
+}
+.title {
+  margin-top: 1.6rem;
 }
 
 /* ================== My skills content =============== */
 .my-skills {
   width: 100%;
   background-color: #dddddd;
+}
+.skills-title {
+  text-align: center;
+  margin-bottom: 0.1rem;
 }
 .skills {
   text-align: right;
@@ -232,12 +259,6 @@ span a button {
 }
 
 /* =============== display clicked content =============== */
-.experience-content{
-  display: none;
-
-} 
-
-
-.experience-content.active-content{
-display: block;
+.experience-content.active-content {
+  display: block;
 }
