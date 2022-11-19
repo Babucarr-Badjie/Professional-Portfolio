@@ -82,9 +82,10 @@ nav button {
   width: 20rem;
   margin-top: 3rem;
   border-radius: 3rem;
+  filter: saturate(0);
 }
 .header-right-image img:hover {
-  opacity: 0.5;
+  filter: saturate(1);
   transition: 0.5s;
 }
 .header-container {
@@ -175,8 +176,6 @@ span a button {
   display: flex;
   gap: 10rem;
   margin: 1.25rem 0 2.5rem;
-  
-
 }
 .experience-titles p:hover {
   color: var(--color-primary);
@@ -261,4 +260,87 @@ span a button {
 /* =============== display clicked content =============== */
 .experience-content.active-content {
   display: block;
+}
+
+/*  ====================== Contact section ================ */
+.contact h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.contact-container {
+  background-color: #e0dfe9;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 3rem;
+  height: 30rem;
+  margin: 7rem auto;
+  border-radius: 1rem;
+}
+/*  ============= aside =========== */
+.contact-aside {
+  background-color: #cabe98;
+  padding: 3rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 8rem;
+}
+.aside-image {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+.aside-image img {
+  width: 20rem;
+}
+.contact-aside h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.contact-details li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.social-contact {
+  display: flex;
+  gap: 3rem;
+}
+.social-contact a {
+  background-color: var(--color-white);
+  padding: 0.4rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.social-contact span {
+  overflow: hidden;
+  display: none;
+}
+.social-contact a:hover {
+  background-color: transparent;
+}
+/*  =========== form ============== */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 1rem;
+}
+.form-name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+.contact-form input[type="text"] {
+  width: 100%;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+}
+.btn-contact {
+  color: var(--color-white);
+  cursor: pointer;
 }

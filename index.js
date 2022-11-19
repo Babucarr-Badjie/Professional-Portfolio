@@ -36,3 +36,9 @@ function opentab(contentName) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(contentName).classList.add("active-content");
 }
+
+// clear the form after submit
+function submitForm() {
+  document.querySelector(".contact-form").submit();
+  document.querySelector(".contact-form").reset();
+}
