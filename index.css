@@ -30,6 +30,12 @@
   --transition: all 400ms ease;
 }
 
+/* ===================== smoothly scroll to each section on click ==================== */
+html {
+  scroll-behavior: smooth;
+  margin-top: 2rem;
+}
+
 body {
   line-height: 1.7;
   font-family: "Poppins", sans-serif;
@@ -38,7 +44,7 @@ body {
 .container {
   padding: 0.6rem 5%;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* ================== Navbar Section ====================== */
@@ -53,7 +59,7 @@ nav {
 .on-scroll {
   background: darkgrey;
   box-shadow: 0 1rem 2rem #1f2641;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .nav-container {
   display: flex;
@@ -71,7 +77,7 @@ nav button {
 }
 
 .nav-menu li a:hover {
-  text-decoration: underline;
+  color: #ff004f;
 }
 .header-left {
   margin-top: 20%;
@@ -110,7 +116,7 @@ nav button {
   margin: 50px 0 0 0;
 }
 .about-me h1 {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .about-me-left-section {
   width: 50%;
@@ -164,7 +170,11 @@ span a button {
 }
 
 /* ===============Experience section ================ */
-.experience {
+
+.my-experience h1 {
+  margin-bottom: 1rem;
+}
+.my-experience {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -265,7 +275,7 @@ span a button {
 /*  ====================== Contact section ================ */
 .contact h1 {
   text-align: center;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 .contact-container {
   background-color: #e0dfe9;
@@ -311,6 +321,7 @@ span a button {
   padding: 0.4rem;
   border-radius: 50%;
   font-size: 1.5rem;
+  transition: transform 0.5s;
 }
 .social-contact span {
   overflow: hidden;
@@ -318,6 +329,7 @@ span a button {
 }
 .social-contact a:hover {
   background-color: transparent;
+  transform: translateY(-0.2rem);
 }
 /*  =========== form ============== */
 

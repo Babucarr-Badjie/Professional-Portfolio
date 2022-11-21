@@ -35,10 +35,10 @@
           ><h4>BABUCARR <i class="uil uil-user-circle"></i></h4
         ></a>
         <ul class="nav-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact-me">Contact</a></li>
         </ul>
         <button id="open-menu"><i class="uil uil-bars"></i></button>
         <button id="close-menu"><i class="uil uil-multiply"></i></button>
@@ -47,7 +47,7 @@
     <!-- ======================= End of NavBar ==================== -->
 
     <!-- ====================== About Me section =================== -->
-    <main>
+    <main id="header">
       <div class="container header-container">
         <div class="header-left">
           <h1>
@@ -64,7 +64,7 @@
     </main>
 
     <!-- ====================About Me Section ========================== -->
-    <main>
+    <main id="about">
       <div class="container about-container">
         <div class="about-me">
           <h1>About</h1>
@@ -97,7 +97,7 @@
               </p>
               <p><b>Major:&nbsp;</b>Civil Engineering</p>
               <span class="options">
-                <a href="./documents/MyCV.pdf" download="./documents/MyCV.pdf">
+                <a href="./documents/MyCV.pdf" download>
                   <button class="btn my-cv">Download CV</button>
                 </a>
                 <a href="#">
@@ -113,9 +113,9 @@
     <!-- =================End of About Section =============== -->
 
     <!-- =================Experience section =============== -->
-    <main>
+    <main id="experience">
       <div class="container experience-container">
-        <div class="experience">
+        <div class="my-experience">
           <h1>Experience</h1>
           <div class="experience-titles">
             <p class="title-link active-link" onclick="opentab('work')">
@@ -199,86 +199,88 @@
     </main>
 
     <!--  =================== Contact Me section ================ -->
-    <main class="contact">
-      <h1>My Contact</h1>
-      <div class="container contact-container">
-        <aside class="contact-aside">
-          <div class="aside-image">
-            <img src="./images/contact.svg" alt="" />
-          </div>
-          <h2>Get in touch</h2>
-          <ul class="contact-details">
-            <li>
-              <i class="uil uil-phone-times"></i>
-              <h5>+886 0978141935</h5>
-            </li>
-            <li>
-              <i class="uil uil-envelope"></i>
-              <h5>babucarr.badjie12@gmailcom</h5>
-            </li>
-            <li>
-              <i class="uil uil-location-point"> </i>
-              <h5>Taipei, Taiwan</h5>
-            </li>
-          </ul>
-          <ul class="social-contact">
-            <li>
-              <a href="https://www.linkedin.com/feed/" target="_blank"
-                ><i class="uil uil-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/" target="_blank"
-                ><i class="uil uil-instagram"></i
-              ></a>
-            </li>
-          </ul>
-        </aside>
-        <form
-          action="https://formspree.io/f/xbjbbdgd"
-          method="POST"
-          class="contact-form"
-        >
-          <div class="form-name">
+    <main id="contact-me">
+      <div class="contact">
+        <h1>My Contact</h1>
+        <div class="container contact-container">
+          <aside class="contact-aside">
+            <div class="aside-image">
+              <img src="./images/contact.svg" alt="" />
+            </div>
+            <h2>Get in touch</h2>
+            <ul class="contact-details">
+              <li>
+                <i class="uil uil-phone-times"></i>
+                <h5>+886 0978141935</h5>
+              </li>
+              <li>
+                <i class="uil uil-envelope"></i>
+                <h5>babucarr.badjie12@gmailcom</h5>
+              </li>
+              <li>
+                <i class="uil uil-location-point"> </i>
+                <h5>Taipei, Taiwan</h5>
+              </li>
+            </ul>
+            <ul class="social-contact">
+              <li>
+                <a href="https://www.linkedin.com/feed/" target="_blank"
+                  ><i class="uil uil-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="uil uil-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </aside>
+          <form
+            action="https://formspree.io/f/xbjbbdgd"
+            method="POST"
+            class="contact-form"
+          >
+            <div class="form-name">
+              <input
+                type="text"
+                name="first name"
+                placeholder="First name"
+                required
+              />
+              <input
+                type="text"
+                name="last name"
+                placeholder="Last name"
+                required
+              />
+              <input
+                type="text"
+                name="position"
+                placeholder="Position"
+                required
+              />
+              <input
+                type="text"
+                name="comany name"
+                placeholder="Company name"
+                required
+              />
+            </div>
             <input
-              type="text"
-              name="first name"
-              placeholder="First name"
+              type="email"
+              name="Email Address"
+              placeholder="Email Address"
               required
             />
-            <input
-              type="text"
-              name="last name"
-              placeholder="Last name"
+            <textarea
+              name="Message"
+              rows="7"
+              placeholder="Message"
               required
-            />
-            <input
-              type="text"
-              name="position"
-              placeholder="Position"
-              required
-            />
-            <input
-              type="text"
-              name="comany name"
-              placeholder="Company name"
-              required
-            />
-          </div>
-          <input
-            type="email"
-            name="Email Address"
-            placeholder="Email Address"
-            required
-          />
-          <textarea
-            name="Message"
-            rows="7"
-            placeholder="Message"
-            required
-          ></textarea>
-          <button type="submit" class="btn btn-contact">Send Message</button>
-        </form>
+            ></textarea>
+            <button type="submit" class="btn btn-contact">Send Message</button>
+          </form>
+        </div>
       </div>
     </main>
 
