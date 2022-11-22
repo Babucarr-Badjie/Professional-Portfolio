@@ -162,7 +162,7 @@ span a button {
   background: #fff;
   color: var(--color-black);
 }
-.my-cv .contact {
+.my-cv .btn-contact {
   color: #fff;
   border: 2px solid linen;
   font-size: 15px;
@@ -184,7 +184,7 @@ span a button {
 
 .experience-titles {
   display: flex;
-  gap: 10rem;
+  gap: 3rem;
   margin: 1.25rem 0 2.5rem;
 }
 .experience-titles p:hover {
@@ -275,6 +275,7 @@ span a button {
 /*  ====================== Contact section ================ */
 .contact h1 {
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 .contact-container {
@@ -355,4 +356,42 @@ textarea {
 .btn-contact {
   color: var(--color-white);
   cursor: pointer;
+}
+
+/* =====================Media queries (tablets)=================== */
+@media screen and (max-width: 1024px) {
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.9rem;
+    cursor: pointer;
+    color: var(--color-black);
+  }
+
+  nav button#close-menu {
+    display: none;
+  }
+  .nav-menu {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    height: fit-content;
+    width: 8rem;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
+  .nav-menu li {
+    width: 100%;
+    height: 6rem;
+    animation: animateTheNavItems 400ms linear forwards;
+    transform-origin: top right;
+  }
+}
+
+/* =====================Media queries (small screens)=================== */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
 }
